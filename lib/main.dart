@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:minichat_project/features/auth/presentation/views/home_screen.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'features/splash_screen/presntation/views/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,12 +16,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
         useMaterial3: true,
+       // textTheme: GoogleFonts.interTextTheme(),
+
       ),
-      home:const HomeScreen(),
+      home:const SplashScreen(),
     );
   }
 }

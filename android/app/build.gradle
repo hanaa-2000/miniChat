@@ -1,8 +1,10 @@
 plugins {
     id "com.android.application"
+    id 'org.jetbrains.kotlin.android' version '1.7.10' apply false
     id "kotlin-android"
     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id "dev.flutter.flutter-gradle-plugin"
+
 }
 
 def localProperties = new Properties()
@@ -50,6 +52,14 @@ android {
             // Signing with the debug keys for now, so `flutter run --release` works.
             signingConfig = signingConfigs.debug
         }
+    }
+    dependencies {
+
+        constraints{
+            implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.10'
+            implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.10'
+        }
+
     }
 }
 
