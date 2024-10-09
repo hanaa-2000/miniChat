@@ -19,9 +19,10 @@ class _SplashScreenState extends State<SplashScreen> {
       },
     );
   }
+
   @override
   void initState() {
-  // navigateScreen();
+    // navigateScreen();
     super.initState();
   }
 
@@ -29,7 +30,7 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: SafeArea(
-        child: SplashBody() ,
+        child: SplashBody(),
       ),
     );
   }
