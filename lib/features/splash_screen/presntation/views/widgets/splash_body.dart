@@ -10,11 +10,14 @@ class SplashBody  extends StatelessWidget {
     var size  = MediaQuery.of(context).size;
     return Column(
       children: [
-        Center(
-          child: Image.asset(AssetsApp.logoApp ,width:size.width ,height: size.height/2, ),
+         SizedBox(
+          height: size.height/9,
         ),
-        const SizedBox(
-          height: 5,
+        Center(
+          child: Image.asset(AssetsApp.logoApp ,width:size.width ,height: size.height/3, ),
+        ),
+         SizedBox(
+          height: size.height/40,
         ),
         Text(
           "WhatsUp",
@@ -25,7 +28,7 @@ class SplashBody  extends StatelessWidget {
           "The best chat app of this century",
           style: StylesApp.textStyle21,
         ),
-        const SizedBox(height: 50,),
+         SizedBox(height:size.height/5,),
       ],
     );
   }
