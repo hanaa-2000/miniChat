@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:minichat_project/core/constants/assets_app.dart';
-import 'package:minichat_project/core/themes/styles.dart';
 import 'package:minichat_project/features/home/views/home_screen.dart';
+import 'package:minichat_project/features/splash_screen/presntation/views/widgets/splash_body.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -13,7 +12,7 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   navigateScreen() {
     Future.delayed(
-      const Duration(seconds: 3),
+      const Duration(seconds: 90),
       () {
         Navigator.of(context).pushReplacement(
             MaterialPageRoute(builder: (context) => const HomeScreen()));
@@ -28,29 +27,9 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    var size  = MediaQuery.of(context).size;
-    return Scaffold(
+    return const Scaffold(
       body: SafeArea(
-        child: Column(
-          children: [
-            Center(
-              child: Image.asset(AssetsApp.logoApp , ),
-            ),
-            const SizedBox(
-              height: 5,
-            ),
-            Text(
-              "WhatsUp",
-              style: StylesApp.textStyle24,
-            ),
-            const Spacer(),
-            Text(
-              "The best chat app of this century",
-              style: StylesApp.textStyle21,
-            ),
-            const SizedBox(height: 50,),
-          ],
-        ),
+        child: SplashBody() ,
       ),
     );
   }
