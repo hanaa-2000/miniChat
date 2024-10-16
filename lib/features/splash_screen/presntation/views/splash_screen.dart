@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:minichat_project/features/home/views/home_screen.dart';
 import 'package:minichat_project/features/splash_screen/presntation/views/widgets/splash_body.dart';
+
+import '../../../home/presentation/views/home_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
