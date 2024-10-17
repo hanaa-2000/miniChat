@@ -8,6 +8,11 @@ abstract class StylesApp{
     color: ColorsApp.green,
     fontSize: 24,
   ) ;
+  static TextStyle  textStyleBold24=const TextStyle(
+    fontWeight: FontWeight.bold,
+    color: Colors.black,
+    fontSize: 24,
+  ) ;
 
   static TextStyle  textStyle21=const TextStyle(
     fontWeight: FontWeight.w500,
