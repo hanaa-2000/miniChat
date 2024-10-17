@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'features/auth/presentation/views/login_screen.dart';
 import 'features/splash_screen/presntation/views/splash_screen.dart';
 
 void main() {
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
         textTheme: GoogleFonts.interTextTheme(),
 
       ),
-      home:const SplashScreen(),
+      home:const LoginScreen(),
     );
   }
 }
