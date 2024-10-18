@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:minichat_project/features/home/presentation/views/home_screen.dart';
+import 'features/home/presentation/views/widgets/botom_nav_widget.dart';
 import 'features/splash_screen/presntation/views/splash_screen.dart';
 
 void main() {
@@ -22,7 +24,7 @@ class MyApp extends StatelessWidget {
         textTheme: GoogleFonts.interTextTheme(),
 
       ),
-      home:const SplashScreen(),
+      home:const BottomNavWidget(),
     );
   }
 }

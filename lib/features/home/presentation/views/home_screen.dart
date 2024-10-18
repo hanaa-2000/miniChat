@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:minichat_project/features/home/presentation/views/widgets/floating_action_widget.dart';
+import 'package:minichat_project/features/home/presentation/views/widgets/home_body.dart';
 
 class HomeScreen  extends StatelessWidget {
   const HomeScreen({super.key});
@@ -6,7 +8,8 @@ class HomeScreen  extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      body: HomeBody(),
+      floatingActionButton: FloatingActionWidget(),
     );
   }
 }

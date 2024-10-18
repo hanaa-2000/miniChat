@@ -20,6 +20,10 @@ abstract class StylesApp{
     fontSize: 18,
   ) ;
 
+  static TextStyle  textStyle16=const TextStyle(
+    color: Colors.black,
+    fontSize: 16,
+  ) ;
 
 
 
