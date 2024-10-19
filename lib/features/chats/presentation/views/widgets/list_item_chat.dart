@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:minichat_project/features/home/presentation/views/widgets/item_chat_body.dart';
+import 'package:minichat_project/features/chats/presentation/views/widgets/item_chat_body.dart';
 
 class ListItemChat  extends StatelessWidget {
   const ListItemChat({super.key});

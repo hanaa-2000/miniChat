@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:minichat_project/features/home/presentation/views/widgets/image_item_widget.dart';
-import 'package:minichat_project/features/home/presentation/views/widgets/item_chat_widget.dart';
-import 'package:minichat_project/features/home/presentation/views/widgets/item_time_widget.dart';
+import 'package:minichat_project/features/chats/presentation/views/widgets/image_item_widget.dart';
+import 'package:minichat_project/features/chats/presentation/views/widgets/item_time_widget.dart';
+
+import 'item_chat_widget.dart';
 
 class ItemChatBody  extends StatelessWidget {
   const ItemChatBody({super.key});
