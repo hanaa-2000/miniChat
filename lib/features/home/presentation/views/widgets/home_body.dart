@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:minichat_project/core/sharedWidgets/appbar_widget.dart';
+import 'package:minichat_project/core/shared_widgets/appbar_widget.dart';
 import 'package:minichat_project/core/themes/colors.dart';
 import 'package:minichat_project/core/themes/styles.dart';
 import 'package:minichat_project/features/calls/presentation/views/call_screen.dart';

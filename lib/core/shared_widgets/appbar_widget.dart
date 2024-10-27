@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:minichat_project/core/themes/styles.dart';
 import 'package:minichat_project/features/home/presentation/views/profile_screen.dart';
 
+import '../../features/home/presentation/views/new_group_screen.dart';
+
 class AppbarWidget extends StatelessWidget implements PreferredSizeWidget {
   const AppbarWidget({super.key});
 
@@ -32,8 +34,11 @@ class AppbarWidget extends StatelessWidget implements PreferredSizeWidget {
           position: PopupMenuPosition.under,
           itemBuilder: (context) {
             return [
-              const PopupMenuItem<String>(
-                child: Text("New Group",style: TextStyle(fontWeight: FontWeight.bold),),
+               PopupMenuItem<String>(
+                child: const Text("New Group",style: TextStyle(fontWeight: FontWeight.bold),),
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => NewGroupScreen(),));
+                },
               ),
                PopupMenuItem(
                 child: const Text("Profile",style: TextStyle(fontWeight: FontWeight.bold)),
