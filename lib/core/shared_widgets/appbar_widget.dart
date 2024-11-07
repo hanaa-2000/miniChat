@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:minichat_project/core/themes/styles.dart';
 import 'package:minichat_project/features/home/presentation/views/profile_screen.dart';
 
@@ -17,18 +18,18 @@ class AppbarWidget extends StatelessWidget implements PreferredSizeWidget {
       actions: [
         IconButton(
             onPressed: () {},
-            icon: const Icon(
+            icon:  Icon(
               Icons.search,
-              size: 25,
+              size: 25.sp,
               color: Colors.black45,
             )),
         PopupMenuButton(
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(10),
+            borderRadius: BorderRadius.circular(10.r),
             side: const BorderSide(color: Colors.grey, width: .5),
           ),
           icon: const Icon(Icons.more_vert),
-          constraints: const BoxConstraints(minWidth: 200),
+          constraints:  BoxConstraints(minWidth: 200.w),
           color: Theme.of(context).scaffoldBackgroundColor,
           elevation: 0,
           position: PopupMenuPosition.under,

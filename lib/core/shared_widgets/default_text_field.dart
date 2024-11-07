@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:minichat_project/core/themes/colors.dart';
 
 
@@ -18,7 +19,7 @@ Widget defaultTextField({
 
   return TextFormField(
    controller:controller ,
-    style: const TextStyle(fontSize: 14),
+    style:  TextStyle(fontSize: 14.sp),
     onChanged:onChanged ,
     enabled: enabled,
     validator: validator,
@@ -29,7 +30,7 @@ Widget defaultTextField({
       prefixIcon: Icon(icon),
       border: OutlineInputBorder(
         //borderSide: BorderSide(color: ColorsApp.grey),
-        borderRadius: BorderRadius.circular(30),
+        borderRadius: BorderRadius.circular(30.r),
       ),
       suffixIcon:suffix != null ? IconButton(
           onPressed: onPressed,

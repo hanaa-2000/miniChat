@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:minichat_project/core/themes/styles.dart';
 
 Widget customButton({
@@ -14,11 +15,11 @@ Widget customButton({
   return Center(
     child: SizedBox(
       width: width??double.infinity,
-      height: height??55,
+      height: height??55.h,
       child: ElevatedButton(
           onPressed: onPressed,
           style: ElevatedButton.styleFrom(
-            padding: const EdgeInsets.symmetric(horizontal: 40, vertical:10),
+            padding:  EdgeInsets.symmetric(horizontal: 40.w, vertical:10.h),
             shape: RoundedRectangleBorder(
               borderRadius:borderRe ??BorderRadius.circular(24) ,
             ),

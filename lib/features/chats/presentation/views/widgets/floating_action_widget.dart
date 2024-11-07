@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:minichat_project/core/themes/colors.dart';
 
 class FloatingActionWidget extends StatelessWidget {
@@ -12,7 +13,7 @@ class FloatingActionWidget extends StatelessWidget {
       onPressed: onPressed,
       backgroundColor: ColorsApp.green,
       elevation: 0,
-      child: const Icon(Icons.chat,color: Colors.white,size: 25,),
+      child:  Icon(Icons.chat,color: Colors.white,size: 25.sp,),
     );
   }
 }

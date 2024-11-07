@@ -8,8 +8,8 @@ class ChatsBody  extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(8),
+    return const Padding(
+      padding: EdgeInsets.all(8),
       child: Column(
         children: [
           ListItemChat(),

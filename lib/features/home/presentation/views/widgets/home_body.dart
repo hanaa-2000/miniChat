@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:minichat_project/core/shared_widgets/appbar_widget.dart';
 import 'package:minichat_project/core/themes/colors.dart';
 import 'package:minichat_project/core/themes/styles.dart';
@@ -38,8 +39,8 @@ class _HomeBodyState extends State<HomeBody> {
             });
           },
           elevation: 0,
-          selectedFontSize: 18,
-          selectedLabelStyle: const TextStyle(fontWeight: FontWeight.bold),
+          selectedFontSize: 18.sp,
+          selectedLabelStyle:  TextStyle(fontSize: 18.sp,fontWeight: FontWeight.bold),
           items: [
             bottomNavBarItem(icon: Icons.chat, label: "Chats"),
             bottomNavBarItem(icon: Icons.lightbulb, label: "Status"),

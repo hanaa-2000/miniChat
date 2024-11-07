@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:minichat_project/core/themes/colors.dart';
 import 'package:minichat_project/core/themes/styles.dart';
 
@@ -17,33 +18,33 @@ class _MessageTileState extends State<MessageTile> {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.only(
-        top: 4,
-        bottom: 4,
-        left: widget.sentByMe?0:24,
-        right: widget.sentByMe?24:0,
+        top: 4.h,
+        bottom: 4.h,
+        left: widget.sentByMe?0:24.w,
+        right: widget.sentByMe?24.w:0,
       ),
       alignment: widget.sentByMe?Alignment.centerRight:Alignment.centerLeft,
       child: Container(
         margin: widget.sentByMe?const EdgeInsets.only(
           left: 30,
-        ):const EdgeInsets.only(
-          right: 30,
+        ): EdgeInsets.only(
+          right: 30.w,
         ),
-        padding: const EdgeInsets.only(
-          top: 16,
-          bottom: 16,
-          left: 20,
-          right: 20,
+        padding:  EdgeInsets.only(
+          top: 16.h,
+          bottom: 16.h,
+          left: 20.w,
+          right: 20.w,
         ),
         decoration: BoxDecoration(
-          borderRadius:widget.sentByMe? const BorderRadius.only(
-            topRight: Radius.circular(20),
-            topLeft: Radius.circular(20),
-            bottomLeft: Radius.circular(20),
-          ):const BorderRadius.only(
-            topLeft: Radius.circular(20),
-            topRight: Radius.circular(20),
-            bottomRight: Radius.circular(20),
+          borderRadius:widget.sentByMe?  BorderRadius.only(
+            topRight: Radius.circular(20.r),
+            topLeft: Radius.circular(20.r),
+            bottomLeft: Radius.circular(20.r),
+          ): BorderRadius.only(
+            topLeft: Radius.circular(20.r),
+            topRight: Radius.circular(20.r),
+            bottomRight: Radius.circular(20.r),
           ),
           color: widget.sentByMe?ColorsApp.grey:Colors.green[300],
         ),
@@ -65,22 +66,22 @@ class _MessageTileState extends State<MessageTile> {
             Text(
               widget.message,
               textAlign: TextAlign.center,
-              style: const TextStyle(
-                  fontSize: 16,
+              style:  TextStyle(
+                  fontSize: 16.sp,
                   fontWeight: FontWeight.w400,
                  // color: Colors.white
               ),
             ),
-            const SizedBox(height: 8,),
+            SizedBox(height: 8.h,),
             SizedBox(
-              width: 100,
+              width: 100.w,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Icon(Icons.check_sharp,size: 20,color: Colors.blueAccent,),
-                  const SizedBox(width: 8,),
-                  Text("4:00 pm",style: StylesApp.textStyle16.copyWith(fontSize: 14,fontWeight: FontWeight.normal),),
+                   Icon(Icons.check_sharp,size: 20.sp,color: Colors.blueAccent,),
+                   SizedBox(width: 8.w,),
+                  Text("4:00 pm",style: StylesApp.textStyle16.copyWith(fontSize: 14.sp,fontWeight: FontWeight.normal),),
 
                 ],
               ),

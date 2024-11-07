@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:minichat_project/core/themes/styles.dart';
 
 import '../../../../../core/constants/assets_app.dart';
@@ -16,9 +17,9 @@ class ListRecentCalls extends StatelessWidget {
         return Padding(
           padding: const EdgeInsets.all(2),
           child: ListTile(
-           leading : const CircleAvatar(
-             backgroundImage: AssetImage(AssetsApp.img),
-             radius: 30,
+           leading :  CircleAvatar(
+             backgroundImage: const AssetImage(AssetsApp.img),
+             radius: 30.r,
            ),
             title: Text("Marwan Ali",style: StylesApp.textStyle18.copyWith(fontWeight: FontWeight.bold),),
             subtitle: Text("Today, 12:00 PM",style: StylesApp.textStyle18,),

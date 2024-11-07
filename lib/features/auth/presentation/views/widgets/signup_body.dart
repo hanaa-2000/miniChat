@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:minichat_project/core/shared_widgets/functions_helper.dart';
 import 'package:minichat_project/features/auth/presentation/views/widgets/button_signup.dart';
 import 'package:minichat_project/features/auth/presentation/views/widgets/email_field.dart';
@@ -29,15 +30,15 @@ class SignupBody  extends StatelessWidget {
             children: [
               const ImageWidget(),
               const RegisterText(),
-              const SizedBox(height: 20,),
+               SizedBox(height: 20.h,),
               NameField(nameController:nameController ,),
-              const SizedBox(height: 20,),
+               SizedBox(height: 20.h,),
               EmailField(emailController: emailController),
-              const SizedBox(height: 20,),
+               SizedBox(height: 20.h,),
               PhoneField(phoneController: phoneController,),
-              const SizedBox(height: 20,),
+               SizedBox(height: 20.h,),
               PasswordField(passwordController: passwordController),
-              const SizedBox(height: 30,),
+               SizedBox(height: 30.h,),
               SignUpButton(
                 phoneController: phoneController,
                 nameController: nameController,
@@ -47,7 +48,7 @@ class SignupBody  extends StatelessWidget {
                   navigatorAppReplacement(widget: const HomeScreen(), context: context);
                 },
               ),
-              const SizedBox(height: 30,),
+               SizedBox(height: 30.h,),
               const LoginRow(),
 
 
