@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../../core/themes/colors.dart';
 
@@ -9,7 +10,7 @@ BottomNavigationBarItem bottomNavBarItem({
 }){
 
   return BottomNavigationBarItem(
-      icon: Icon(icon ,color: ColorsApp.green,size: 30,),
+      icon: Icon(icon ,color: ColorsApp.green,size: 24.sp,),
     label: label,
   );
 

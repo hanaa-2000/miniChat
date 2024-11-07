@@ -19,7 +19,7 @@ class ListItemChat  extends StatelessWidget {
                   onTap: (){
                     navigatorApp(context: context , widget: const BubbleChatWidget());
                   },
-                  child: ItemChatBody());
+                  child: const ItemChatBody());
             },));
   }
 }

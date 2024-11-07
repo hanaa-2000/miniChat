@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:minichat_project/core/themes/colors.dart';
 import 'package:minichat_project/core/themes/styles.dart';
 import 'package:minichat_project/features/chats/presentation/views/widgets/message_tile.dart';
@@ -20,42 +21,44 @@ class BubbleChatWidget  extends StatelessWidget {
             width: MediaQuery.of(context).size.width,
             child: Container(
               width: MediaQuery.of(context).size.width,
-              margin: const EdgeInsets.symmetric(horizontal: 8,vertical: 8),
-              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+              margin:  EdgeInsets.symmetric(horizontal: 8.w,vertical: 8.h),
+              padding:  EdgeInsets.symmetric(horizontal: 8.w, vertical: 2.h),
               decoration: BoxDecoration(
                 color: Colors.green[50],
                 border: Border.all(color: Colors.black,width: 1),
-                borderRadius: BorderRadius.circular(16)
+                borderRadius: BorderRadius.circular(16.r)
               ),
               child: Row(
                 children: [
                   Expanded(
                     child: TextFormField(
-                      style: const TextStyle(
-                        color: Colors.white,
+                      style:  TextStyle(
+                        color: Colors.black,
+                        fontSize: 18.sp
                       ),
-                      decoration: const InputDecoration(
+                      decoration:  InputDecoration(
                         hintText: 'Send Message...',
                         hintStyle: TextStyle(
-                          fontSize: 16,
+                          fontSize: 16.sp,
                          // color: Colors.white
                         ),
                         border: InputBorder.none,
                       ),
                     ),
                   ),
-                  const SizedBox(
-                    width: 12,
+                   SizedBox(
+                    width: 12.w,
                   ),
                   GestureDetector(
                     onTap: () {
                     },
                     child: Container(
-                      height: 50,
-                      width: 50,
+                      height: 50.h,
+                      width: 50.w,
                       decoration: BoxDecoration(
                         color: ColorsApp.green,
-                        borderRadius: BorderRadius.circular(30),
+                       shape: BoxShape.circle
+                       // borderRadius: BorderRadius.circular(30.r),
                       ),
                       child: const Center(
                         child: Icon(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:minichat_project/features/chats/presentation/views/widgets/image_item_widget.dart';
 import 'package:minichat_project/features/chats/presentation/views/widgets/item_time_widget.dart';
 
@@ -17,9 +18,9 @@ class ItemChatBody  extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              ImageItemWidget(),
-              SizedBox(width: 20,),
-              ItemChatWidget(),
+              const ImageItemWidget(),
+              SizedBox(width: 20.w,),
+              const ItemChatWidget(),
             ],
           ),
           ItemTimeWidget(),

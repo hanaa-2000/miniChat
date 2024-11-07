@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:minichat_project/features/status/presentation/views/widgets/image_status_recent.dart';
 import 'package:minichat_project/features/status/presentation/views/widgets/title_my_status_widget.dart';
 
@@ -16,11 +17,11 @@ class ListStatusViewed  extends StatelessWidget {
           padding: const EdgeInsets.all(4),
           child: Row(
             children: [
-              ImageStatusRecent(statusRead: false),
+              const ImageStatusRecent(statusRead: false),
               SizedBox(
-                width: 20,
+                width: 20.w,
               ),
-              TitleMyStatusWidget(
+              const TitleMyStatusWidget(
                 nameStatus: "Rowan Ali",
                 timeStatus: "Today, 12:00 PM",
               ),

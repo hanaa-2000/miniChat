@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:minichat_project/core/shared_widgets/functions_helper.dart';
 import 'package:minichat_project/features/auth/presentation/views/widgets/button_login.dart';
 import 'package:minichat_project/features/auth/presentation/views/widgets/email_field.dart';
@@ -25,14 +26,14 @@ class LoginBody  extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const SizedBox(height: 50,),
+                 SizedBox(height: 50.h,),
                 const ImageWidget(),
                 const TextLogin(),
-                const SizedBox(height: 30,),
+                 SizedBox(height: 30.h,),
                 EmailField(emailController: emailController,),
-                const SizedBox(height: 20,),
+                 SizedBox(height: 20.h,),
                 PasswordField(passwordController:passwordController ,),
-                const SizedBox(height: 40,),
+                 SizedBox(height: 40.h,),
                 ButtonLogin(
                   emailController: emailController,
                   passwordController: passwordController,
@@ -40,7 +41,7 @@ class LoginBody  extends StatelessWidget {
                     navigatorAppReplacement(widget: const HomeScreen(), context: context);
                   },
                 ),
-                const SizedBox(height: 50),
+                 SizedBox(height: 50.h),
                 const RegisterRow(),
               ],
             ),

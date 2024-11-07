@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:minichat_project/core/shared_widgets/functions_helper.dart';
 import 'package:minichat_project/core/themes/colors.dart';
 import 'package:minichat_project/core/themes/styles.dart';
@@ -11,12 +12,12 @@ class RegisterRow   extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Text("Don’t have an account? ",style: StylesApp.textStyle21.copyWith(fontSize: 18),),
+        Text("Don’t have an account? ",style: StylesApp.textStyle21.copyWith(fontSize: 18.sp),),
         GestureDetector(
             onTap: (){
               navigatorApp(widget:const SignUpScreen() , context: context);
             },
-            child: Text("Register here",style: StylesApp.textStyle24.copyWith(fontSize: 18,color: ColorsApp.primaryColor),)),
+            child: Text("Register here",style: StylesApp.textStyle24.copyWith(fontSize: 18.sp,color: ColorsApp.primaryColor),)),
       ],
     );
   }
