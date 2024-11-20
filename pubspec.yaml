@@ -39,8 +39,12 @@ dependencies:
   firebase_core:
   firebase_auth:
   firebase_cloud_firestore:
+  firebase_storage:
+  image_picker:
   fluttertoast:
   flutter_screenutil:
+  bloc:
+  flutter_bloc:
 
 dev_dependencies:
   flutter_test:
