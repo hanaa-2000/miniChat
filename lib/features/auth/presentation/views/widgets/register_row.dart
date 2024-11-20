@@ -12,7 +12,7 @@ class RegisterRow   extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Text("Don’t have an account? ",style: StylesApp.textStyle21.copyWith(fontSize: 18.sp),),
+        Text("Don’t have an account? ",style: StylesApp.textStyle21.copyWith(fontSize: 16.sp),),
         GestureDetector(
             onTap: (){
               navigatorApp(widget:const SignUpScreen() , context: context);
