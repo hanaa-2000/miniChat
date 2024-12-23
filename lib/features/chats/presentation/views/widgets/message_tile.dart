@@ -4,10 +4,11 @@ import 'package:minichat_project/core/themes/colors.dart';
 import 'package:minichat_project/core/themes/styles.dart';
 
 class MessageTile extends StatefulWidget {
-  const MessageTile({super.key, required this.message, required this.sender, required this.sentByMe});
+  const MessageTile({super.key, required this.message, required this.sender, required this.sentByMe, required this.date});
   final String message;
   final String sender;
   final bool sentByMe;
+  final String date;
   @override
   State<MessageTile> createState() => _MessageTileState();
 }
@@ -23,7 +24,7 @@ class _MessageTileState extends State<MessageTile> {
         left: widget.sentByMe?0:24.w,
         right: widget.sentByMe?24.w:0,
       ),
-      alignment: widget.sentByMe?Alignment.centerRight:Alignment.centerLeft,
+      alignment:widget.sentByMe?Alignment.centerRight:Alignment.centerLeft,
       child: Container(
         margin: widget.sentByMe?const EdgeInsets.only(
           left: 30,
@@ -46,7 +47,7 @@ class _MessageTileState extends State<MessageTile> {
             topRight: Radius.circular(20.r),
             bottomRight: Radius.circular(20.r),
           ),
-          color: widget.sentByMe?ColorsApp.grey:Colors.green[300],
+          color: !widget.sentByMe?Colors.green[300]:ColorsApp.grey,
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -73,19 +74,18 @@ class _MessageTileState extends State<MessageTile> {
               ),
             ),
             SizedBox(height: 8.h,),
-            SizedBox(
-              width: 100.w,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                   Icon(Icons.check_sharp,size: 20.sp,color: Colors.blueAccent,),
-                   SizedBox(width: 8.w,),
-                  Text("4:00 pm",style: StylesApp.textStyle16.copyWith(fontSize: 14.sp,fontWeight: FontWeight.normal),),
+            Text(widget.date,style: StylesApp.textStyle16.copyWith(fontSize: 14.sp,fontWeight: FontWeight.normal),),
 
-                ],
-              ),
-            )
+            // Row(
+            //   mainAxisAlignment: MainAxisAlignment.start,
+            //   crossAxisAlignment: CrossAxisAlignment.start,
+            //   children: [
+            //      Icon(Icons.check_sharp,size: 20.sp,color: Colors.blueAccent,),
+            //      SizedBox(width: 8.w,),
+            //     Text(widget.date,style: StylesApp.textStyle16.copyWith(fontSize: 14.sp,fontWeight: FontWeight.normal),),
+            //
+            //   ],
+            // )
             ],
         ),
       ),

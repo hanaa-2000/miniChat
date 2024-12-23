@@ -1,16 +1,11 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'dart:async';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:minichat_project/core/constants/firebase_consts.dart';
-import 'package:minichat_project/core/shared_widgets/functions_helper.dart';
 import 'package:minichat_project/core/themes/styles.dart';
-import 'package:minichat_project/features/auth/presentation/viewModel/auth_cubit.dart';
+import 'package:minichat_project/features/group/views/new_group_screen.dart';
 import 'package:minichat_project/features/home/presentation/views/profile_screen.dart';
+import 'package:minichat_project/features/home/presentation/views/search_screen.dart';
 import 'package:minichat_project/features/splash_screen/presntation/views/splash_screen.dart';
-
-import '../../features/home/presentation/views/new_group_screen.dart';
 
 class AppbarWidget extends StatelessWidget implements PreferredSizeWidget {
   const AppbarWidget({super.key});
@@ -25,7 +20,10 @@ class AppbarWidget extends StatelessWidget implements PreferredSizeWidget {
       ),
       actions: [
         IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => SearchScreen(),));
+
+            },
             icon:  Icon(
               Icons.search,
               size: 25.sp,

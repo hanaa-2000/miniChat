@@ -45,7 +45,9 @@ dependencies:
   flutter_screenutil:
   bloc:
   flutter_bloc:
-
+  intl:
+  chatview:
+  equatable:
 dev_dependencies:
   flutter_test:
     sdk: flutter

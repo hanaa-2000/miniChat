@@ -41,47 +41,52 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyD0vD6XEIeQhGBLEi6IR-HuWOW72r5PqX0',
-    appId: '1:454030573780:web:756c1f88be36a7168dfb41',
-    messagingSenderId: '454030573780',
-    projectId: 'task1-1e960',
-    authDomain: 'task1-1e960.firebaseapp.com',
-    storageBucket: 'task1-1e960.firebasestorage.app',
+    apiKey: 'AIzaSyA2c5tWPM-Iykm0b0PpH8t11cdVtv392wU',
+    appId: '1:337839342021:web:65ce20636802343746cbac',
+    messagingSenderId: '337839342021',
+    projectId: 'wallpaper-6f9a7',
+    authDomain: 'wallpaper-6f9a7.firebaseapp.com',
+    databaseURL: 'https://wallpaper-6f9a7-default-rtdb.firebaseio.com',
+    storageBucket: 'wallpaper-6f9a7.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCRiq1wU7_GQeMH6Im7q0x13mAF71gzg6I',
-    appId: '1:454030573780:android:748318c4b322b35e8dfb41',
-    messagingSenderId: '454030573780',
-    projectId: 'task1-1e960',
-    storageBucket: 'task1-1e960.firebasestorage.app',
+    apiKey: 'AIzaSyDPQfP823FJA5fL6NYBQjz2bE2eEivzwro',
+    appId: '1:337839342021:android:a32f680815b2d7b746cbac',
+    messagingSenderId: '337839342021',
+    projectId: 'wallpaper-6f9a7',
+    databaseURL: 'https://wallpaper-6f9a7-default-rtdb.firebaseio.com',
+    storageBucket: 'wallpaper-6f9a7.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDtB1FWbczi_LGs8NHQt5x6E2DcTUkXmc4',
-    appId: '1:454030573780:ios:1739a82a77f1b9678dfb41',
-    messagingSenderId: '454030573780',
-    projectId: 'task1-1e960',
-    storageBucket: 'task1-1e960.firebasestorage.app',
+    apiKey: 'AIzaSyC7HnT_6fliz2T-Pazc-Xju3wByvg7Dvt4',
+    appId: '1:337839342021:ios:a53981b71ba0e98646cbac',
+    messagingSenderId: '337839342021',
+    projectId: 'wallpaper-6f9a7',
+    databaseURL: 'https://wallpaper-6f9a7-default-rtdb.firebaseio.com',
+    storageBucket: 'wallpaper-6f9a7.appspot.com',
     iosBundleId: 'com.example.minichatProject',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyDtB1FWbczi_LGs8NHQt5x6E2DcTUkXmc4',
-    appId: '1:454030573780:ios:1739a82a77f1b9678dfb41',
-    messagingSenderId: '454030573780',
-    projectId: 'task1-1e960',
-    storageBucket: 'task1-1e960.firebasestorage.app',
+    apiKey: 'AIzaSyC7HnT_6fliz2T-Pazc-Xju3wByvg7Dvt4',
+    appId: '1:337839342021:ios:a53981b71ba0e98646cbac',
+    messagingSenderId: '337839342021',
+    projectId: 'wallpaper-6f9a7',
+    databaseURL: 'https://wallpaper-6f9a7-default-rtdb.firebaseio.com',
+    storageBucket: 'wallpaper-6f9a7.appspot.com',
     iosBundleId: 'com.example.minichatProject',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyD0vD6XEIeQhGBLEi6IR-HuWOW72r5PqX0',
-    appId: '1:454030573780:web:f695e2595332d0e08dfb41',
-    messagingSenderId: '454030573780',
-    projectId: 'task1-1e960',
-    authDomain: 'task1-1e960.firebaseapp.com',
-    storageBucket: 'task1-1e960.firebasestorage.app',
+    apiKey: 'AIzaSyA2c5tWPM-Iykm0b0PpH8t11cdVtv392wU',
+    appId: '1:337839342021:web:65ce20636802343746cbac',
+    messagingSenderId: '337839342021',
+    projectId: 'wallpaper-6f9a7',
+    authDomain: 'wallpaper-6f9a7.firebaseapp.com',
+    databaseURL: 'https://wallpaper-6f9a7-default-rtdb.firebaseio.com',
+    storageBucket: 'wallpaper-6f9a7.appspot.com',
   );
 
 }
