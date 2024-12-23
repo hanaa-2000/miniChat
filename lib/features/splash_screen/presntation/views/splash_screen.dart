@@ -19,7 +19,7 @@ class _SplashScreenState extends State<SplashScreen> {
   Timer? _timer;
   navigateScreen() {
     _timer=Timer(
-      const Duration(seconds: 3),
+      const Duration(seconds: 15),
       () {
         auth.authStateChanges().listen((User ? user) {
           if(mounted){

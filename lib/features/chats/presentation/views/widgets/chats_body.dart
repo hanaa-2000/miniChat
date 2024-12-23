@@ -11,6 +11,7 @@ class ChatsBody  extends StatelessWidget {
     return const Padding(
       padding: EdgeInsets.all(8),
       child: Column(
+
         children: [
           ListItemChat(),
         ],

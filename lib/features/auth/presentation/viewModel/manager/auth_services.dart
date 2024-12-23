@@ -20,6 +20,7 @@ class AuthServices {
       'name':name,
       "phone":phone,
       "email":email,
+      "profileImage":""
     });
 
   }

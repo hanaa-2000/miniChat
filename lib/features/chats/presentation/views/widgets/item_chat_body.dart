@@ -6,8 +6,8 @@ import 'package:minichat_project/features/chats/presentation/views/widgets/item_
 import 'item_chat_widget.dart';
 
 class ItemChatBody  extends StatelessWidget {
-  const ItemChatBody({super.key});
-
+  const  ItemChatBody({super.key, required this.userName, required this.phone, required this.img, });
+final String userName ,phone,img;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -18,9 +18,9 @@ class ItemChatBody  extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              const ImageItemWidget(),
+               ImageItemWidget(img:img ,),
               SizedBox(width: 20.w,),
-              const ItemChatWidget(),
+               ItemChatWidget(name:userName, phone:phone,),
             ],
           ),
           ItemTimeWidget(),
